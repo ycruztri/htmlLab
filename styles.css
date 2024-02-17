@@ -33,7 +33,7 @@ body {
 
 .card p{
   font-family: 'Verdana';
-  color: orange;
+  color: black;
 }
 
 @media screen and (max-width: 600px) {
