@@ -1,20 +1,56 @@
 #logoBar{
   width: 30vw;
-  height: 100vh;
+  height: auto;
 }
 #siteLogo{
   width: 100%;
 }
 body {
   display: flex;
+  background-color: black; 
+  color: white; 
+  font-family: 'Verdana';
 }
 #staffGallery{
   width: 70vw;
   display: inherit;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh
 }
 .galleryImage{
   width: 100%;
   height: auto;
   height: 300px;
+}
+
+.card{
+  background-color: grey;
+  border-radius: 5%;
+}
+
+.card p{
+  font-family: 'Verdana';
+  color: orange;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    flex-direction: column; 
+  }
+  #logoBar {
+    width: 100%;
+  }
+  #staffGallery {
+    width: 100%;
+    height: auto; 
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: space-between;
+    order: 2
+  }
 }
